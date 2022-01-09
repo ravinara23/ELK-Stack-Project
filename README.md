@@ -39,8 +39,8 @@ The configuration details of each machine may be found below.
 | Name     | Function          | IP Address | Operating System |
 |----------|-------------------|------------|------------------|
 | Jump Box | Gateway           | 10.0.0.4   | Linux            |
-| Web-1    | Host DWVA         | 10.0.0.5   | Linux            |                 
-| Web-2    | Host DWVA         | 10.0.0.6   | Linux            |                 
+| Web-1    | Host DWVA         | 10.0.0.7   | Linux            |                 
+| Web-2    | Host DWVA         | 10.0.0.8   | Linux            |                 
 | ELK      | Host DWVA         | 10.0.0.4   | Linux            |               
 
 ### Access Policies
@@ -48,20 +48,20 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-169.57.33.126 (Public IP)
+104.45.195.180 (Public IP)
 
 Machines within the network can only be accessed by Jump-Box-Provisioner VM.
 - Which machine did you allow to access your ELK VM? Jump-Box-Provisioner
-- What was its IP address? 169.57.33.126
+- What was its IP address? 104.45.195.180
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 169.57.33.126        |
+| Jump Box | Yes/No              | 104.45.195.180       |
 | Web-1    |  No                 | Local Vnet           |
 | Web-2    |  No                 | Local Vnet           |
-| ELK      | Yes                 | 169.57.33.126        |
+| ELK      | Yes                 | 104.45.195.180       |
 
 
 ### Elk Configuration
@@ -77,10 +77,10 @@ The playbook implements the following tasks:
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-|   Name   |Function	IP Address |Operating System      |
-|----------|---------------------|----------------------|
-| Web-1    |  10.0.0.5           | Local Vnet           |
-| Web-2    |  10.0.0.6           | Local Vnet           |
+| Name     |Function	| IP Address         |  Operating System    |
+|----------|------------|--------------------|----------------------|
+| Web-1    | DVWA       |   10.0.0.5         | Local Vnet           |
+| Web-2    | DVWA       |   10.0.0.6         | Local Vnet           |
 
 We have installed the following Beats on these machines:
 - Filebeat
