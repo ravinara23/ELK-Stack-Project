@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Homework 12_ Cloud Security drawio](https://user-images.githubusercontent.com/89654192/148660768-7df65757-8cf5-4bbe-b509-37e5b13c7d8c.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 - Elk Playbook.yml
 - Metricbeat.yml
 - Filebeatplaybook.yml
@@ -30,7 +30,7 @@ Load balancing ensures that the application will be highly available, in additio
 - Load Balancers protect against denial of service attacks (DDoS) because it analyzes the traffic thats coming in and can send traffic to particular servers. It protects the server from over loading due to heavily traffic that comes in. Basically, it distrubutes the traffic evenly among the connected the servers. It periodically chech the health probe of the machines prior to sending the traffic. If the server is malfunctioning, then load balancer will divert the traffic from it and it will keep redirecting the traffic until the server doesn't work properly. 
 - JumpBox limits the access of your VM to the public since, it needs private IPs of the machines cannot. In essence, it does not allow 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - Filebeat watches the for change in the system structure. It acts as a logging agent which generates the log files, tail it,  forward the data for indexing
 - Metricbeats collects the metrics and statistics from the operating system and from the services running on the server.
 
